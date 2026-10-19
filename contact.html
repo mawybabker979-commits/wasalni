@@ -10,11 +10,11 @@
 
     <header>
         <nav class="navbar">
-            <a href="login.html" class="logo">🚖 وصلني</a>
+            <a href="index.html" class="logo">🚖 <span>وصلني</span></a>
             <ul class="nav-links">
-                <li><a href="login.html">تسجيل الدخول</a></li>
-                <li><a href="cars.html">السيارات والأسعار</a></li>
-                <li><a href="map.html">الخريطة واللوكيشن</a></li>
+                <li><a href="index.html">تسجيل الدخول</a></li>
+                <li><a href="about.html">السيارات المتاحة</a></li>
+                <li><a href="map.html">الخريطة</a></li>
                 <li><a href="contact.html" class="active">تواصل معنا</a></li>
             </ul>
         </nav>
@@ -23,58 +23,47 @@
     <div class="container">
         <h2 class="page-title">تواصل معنا والاستفسارات</h2>
 
-        <div class="contact-wrapper">
-            <!-- نموذج التواصل -->
+        <div class="contact-container">
+            <!-- نموذج إرسال الرسائل -->
             <div class="card">
-                <h3>أرسل لنا استفسارك</h3>
-                <br>
+                <h3 style="margin-bottom: 1rem; color: var(--text-light);">أرسل رسالة أو استفسار</h3>
                 <form action="#" method="POST">
                     <div class="form-group">
-                        <label for="name">الاسم الكامل</label>
-                        <input type="text" id="name" placeholder="أدخل اسمك" required>
+                        <label for="c-name">الاسم</label>
+                        <input type="text" id="c-name" placeholder="أدخل اسمك الكريم" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="email">البريد الإلكتروني / الهاتف</label>
-                        <input type="text" id="email" placeholder="أدخل وسيلة التواصل" required>
+                        <label for="c-phone">رقم التواصل</label>
+                        <input type="tel" id="c-phone" placeholder="أدخل رقم الهاتف" required>
                     </div>
 
                     <div class="form-group">
-                        <label for="subject">نوع الاستفسار</label>
-                        <select id="subject">
-                            <option>استفسار عام</option>
-                            <option>شكوى على رحلة</option>
-                            <option>المفقودات</option>
-                            <option>الانضمام كسائق</option>
-                        </select>
+                        <label for="c-msg">نص الرسالة / الاستفسار</label>
+                        <textarea id="c-msg" rows="4" placeholder="اكتب استفسارك هنا..." required></textarea>
                     </div>
 
-                    <div class="form-group">
-                        <label for="message">الرسالة</label>
-                        <textarea id="message" rows="4" placeholder="اكتب استفسارك هنا..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">إرسال الرسالة</button>
+                    <button type="submit" class="btn">إرسال الرسالة ✉</button>
                 </form>
             </div>
 
             <!-- معلومات التواصل المباشر -->
-            <div class="contact-info">
-                <div class="info-item">
-                    <h4>📞 الدعم الفني المباشر</h4>
-                    <p>متواجدون على مدار 24 ساعة طوال الأسبوع</p>
-                    <strong>9600 / +249 900000000</strong>
+            <div>
+                <div class="info-card">
+                    <h4>📞 الدعم الفني</h4>
+                    <p style="color: var(--text-muted); margin-top: 5px;">خدمة متواصلة على مدار الساعة</p>
+                    <p style="font-weight: bold; margin-top: 5px;">+249 900 000 000</p>
                 </div>
 
-                <div class="info-item">
+                <div class="info-card">
                     <h4>✉ البريد الإلكتروني</h4>
-                    <p>للمقترحات والشكاوى:</p>
-                    <strong>support@wasalni.com</strong>
+                    <p style="color: var(--text-muted); margin-top: 5px;">للاستفسارات والشكاوى</p>
+                    <p style="font-weight: bold; margin-top: 5px;">info@wasalni.com</p>
                 </div>
 
-                <div class="info-item">
-                    <h4>🏢 المقر الرئيسي</h4>
-                    <p>شارع النيل - مركز خدمة العملاء</p>
+                <div class="info-card">
+                    <h4>📍 المقر الرئيسي</h4>
+                    <p style="color: var(--text-muted); margin-top: 5px;">مركز خدمة العملاء وتطوير الخدمات</p>
                 </div>
             </div>
         </div>
