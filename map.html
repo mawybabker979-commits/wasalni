@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وصلني - تحديد الموقع</title>
+    <title>وصلني - خريطة الموقع</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <a href="login.html" class="logo">🚖 وصلني</a>
+            <a href="index.html" class="logo">🚖 <span>وصلني</span></a>
             <ul class="nav-links">
-                <li><a href="login.html">تسجيل الدخول</a></li>
-                <li><a href="cars.html">السيارات والأسعار</a></li>
-                <li><a href="map.html" class="active">الخريطة واللوكيشن</a></li>
+                <li><a href="index.html">تسجيل الدخول</a></li>
+                <li><a href="about.html">السيارات المتاحة</a></li>
+                <li><a href="map.html" class="active">الخريطة</a></li>
                 <li><a href="contact.html">تواصل معنا</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <h2 class="page-title">تحديد موقع الانطلاق والوجهة</h2>
+        <h2 class="page-title">خريطة الموقع وتحديد الرحلة</h2>
 
         <div class="card">
-            <div class="map-container">
-                <!-- خريطة توضيحية من Google Maps -->
+            <!-- عرض الخريطة -->
+            <div class="map-box">
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.852150381669!2d33.5186!3d14.4012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDI0JzA0LjMiTiAzM8KwMzEnMDcuMCJF!5e0!3m2!1sar!2s!4v1600000000000!5m2!1sar!2s" 
                     allowfullscreen="" 
@@ -33,19 +33,22 @@
                 </iframe>
             </div>
 
-            <form style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
+            <!-- إدخال تفاصيل الموقع -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px;">
                 <div class="form-group">
-                    <label>📍 موقع الانطلاق</label>
-                    <input type="text" placeholder="تم تحديد موقعك الحالي..." value="الموقع الحالي" required>
+                    <label>📍 نقطة الانطلاق</label>
+                    <input type="text" value="موقعي الحالي (تم التحديد تلقائياً)" readonly>
                 </div>
                 <div class="form-group">
-                    <label>🏁 الوجهة</label>
-                    <input type="text" placeholder="إلى أين تريد الذهاب؟" required>
+                    <label>🏁 وجهة الوصول</label>
+                    <input type="text" placeholder="اكتب المكان المراد الوصول إليه...">
                 </div>
-                <div class="form-group" style="grid-column: 1 / -1;">
-                    <button type="submit" class="btn">تأكيد طلب الرحلة 🚕</button>
-                </div>
-            </form>
+            </div>
+        </div>
+
+        <!-- زر الانتقال للصفحة التالية (تواصل معنا) -->
+        <div class="next-page-action">
+            <a href="contact.html" class="btn" style="max-width: 350px;">الانتقال لصفحة التواصل والاستفسار ➔</a>
         </div>
     </div>
 
