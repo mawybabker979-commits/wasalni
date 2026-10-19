@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق وصلني - تسجيل الدخول</title>
+    <title>تطبيق وصلني - الرئيسية</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
-        <h2><a href="index.html" style="text-decoration: none; color: #38bdf8;">تطبيق وصلني</a></h2>
+        <h2><a href="index.html">تطبيق وصلني</a></h2>
         <nav>
-            <a href="index.html">الرئيسية</a>
+            <a href="index.html" class="active">الرئيسية</a>
             <a href="map.html">الخريطة</a>
             <a href="about.html">عن الموقع</a>
             <a href="contact.html">تواصل معنا</a>
         </nav>
     </header>
 
-    <h2 id="welcome-msg" style="color: #38bdf8; font-size: 20px; text-align: center; margin: 15px 0;"></h2>
+    <main>
+        <h3>أهلاً بك في تطبيق وصلني</h3>
+        <p>منصتك الذكية الأولى لطلب خدمات النقل وتوصيل الركاب بأمان تام، سرعة في الاستجابة، وأسعار مناسبة على مدار الساعة.</p>
 
-    <main class="container">
-        <div class="card">
-            <h2>تسجيل الدخول إلى حسابك</h2>
-            <form action="map.html" method="get">
-                <div class="form-group" style="text-align: right; margin-bottom: 15px;">
-                    <label for="username">اسم المستخدم أو رقم الهاتف:</label><br>
-                    <input type="text" id="username" name="username" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #475569; background-color: #0f172a; color: #fff; margin-top: 5px;">
-                </div>
-                
-                <div class="form-group" style="text-align: right; margin-bottom: 15px;">
-                    <label for="password">كلمة المرور:</label><br>
-                    <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #475569; background-color: #0f172a; color: #fff; margin-top: 5px;">
-                </div>
-                
-                <div>
-                    <button type="submit" id="login-btn" class="btn" style="width: 100%; padding: 10px; background-color: #38bdf8; color: #0f172a; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">تسجيل الدخول</button>
-                </div>
-            </form>
+        <div style="background-color: #0f172a; padding: 25px; border-radius: 10px; border: 1px solid #334155; margin-top: 25px; text-align: center;">
+            <h4 style="color: #38bdf8; margin-bottom: 15px;">هل ترغب في التنقل الآن؟</h4>
+            <p style="margin-bottom: 20px;">احصل على أقرب كابتن لموقعك بضغطة زر واحدة بكل سهولة وأمان.</p>
+            <a href="map.html" class="btn" style="display: inline-block; text-decoration: none; padding: 12px 30px; background-color: #38bdf8; color: #0f172a; border-radius: 8px; font-weight: bold;">تصفح الخريطة واطلب رحلة</a>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2026 تطبيق وصلني - جميع الحقوق محفوظة</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 تطبيق وصلني</p>
     </footer>
 
     <script src="js/main.js"></script>
