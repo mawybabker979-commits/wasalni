@@ -3,71 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وصلني - أنواع السيارات والأسعار</title>
+    <title>وصلني - السيارات المتاحة</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <a href="login.html" class="logo">🚖 وصلني</a>
+            <a href="index.html" class="logo">🚖 <span>وصلني</span></a>
             <ul class="nav-links">
-                <li><a href="login.html">تسجيل الدخول</a></li>
-                <li><a href="cars.html" class="active">السيارات والأسعار</a></li>
-                <li><a href="map.html">الخريطة واللوكيشن</a></li>
+                <li><a href="index.html">تسجيل الدخول</a></li>
+                <li><a href="about.html" class="active">السيارات المتاحة</a></li>
+                <li><a href="map.html">الخريطة</a></li>
                 <li><a href="contact.html">تواصل معنا</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="container">
-        <h2 class="page-title">فئات السيارات والتعرفة</h2>
+        <h2 class="page-title">أنواع السيارات المتاحة ومواصفاتها</h2>
 
         <div class="cars-grid">
-            <!-- سيارة اقتصادية -->
+            <!-- الفئة الاقتصادية -->
             <div class="car-card">
-                <div class="car-img">🚗 صوّرة سيارة اقتصادية</div>
-                <div class="car-details">
-                    <h3>وصلني - اقتصادي</h3>
-                    <p class="car-price">الفتح: 500 د.س | 150 د.س / كم</p>
-                    <ul class="car-specs">
-                        <li>✔ 4 ركاب</li>
-                        <li>✔ تكييف ممتاز</li>
-                        <li>✔ سيارات حديثة واقتصادية</li>
-                    </ul>
-                    <button class="btn">طلب الآن</button>
-                </div>
+                <div class="car-icon">🚗</div>
+                <h3 class="car-title">وصلني اقتصادي</h3>
+                <p class="car-price">التعرفة: 500 ج.س فتحة عداد</p>
+                <ul class="car-specs">
+                    <li>✔ 4 مقاعد مريحة</li>
+                    <li>✔ تكييف هواء عالِ الجودة</li>
+                    <li>✔ مناسبة للرحلات اليومية السريعة</li>
+                </ul>
             </div>
 
-            <!-- سيارة عائلية -->
+            <!-- الفئة العائلية -->
             <div class="car-card">
-                <div class="car-img">🚙 صوّرة سيارة عائلية</div>
-                <div class="car-details">
-                    <h3>وصلني - عائلي (XL)</h3>
-                    <p class="car-price">الفتح: 800 د.س | 250 د.س / كم</p>
-                    <ul class="car-specs">
-                        <li>✔ تتسع حتى 6 ركاب</li>
-                        <li>✔ مساحة أمتعة واسعة</li>
-                        <li>✔ رحلات طويلة ومريحة</li>
-                    </ul>
-                    <button class="btn">طلب الآن</button>
-                </div>
+                <div class="car-icon">🚙</div>
+                <h3 class="car-title">وصلني عائلي (XL)</h3>
+                <p class="car-price">التعرفة: 800 ج.س فتحة عداد</p>
+                <ul class="car-specs">
+                    <li>✔ 6 إلى 7 مقاعد</li>
+                    <li>✔ مساحة واسعة للأمتعة الحقائب</li>
+                    <li>✔ مناسبة للعائلات والمجموعات</li>
+                </ul>
             </div>
 
-            <!-- سيارة فاخرة -->
+            <!-- الفئة الفاخرة -->
             <div class="car-card">
-                <div class="car-img">🚘 صوّرة سيارة VIP</div>
-                <div class="car-details">
-                    <h3>وصلني - VIP (فاخر)</h3>
-                    <p class="car-price">الفتح: 1500 د.س | 400 د.س / كم</p>
-                    <ul class="car-specs">
-                        <li>✔ سيارات فارهة وحديثة جداً</li>
-                        <li>✔ سائقين متميزين</li>
-                        <li>✔ خدمة ضيافة ومياه مجانية</li>
-                    </ul>
-                    <button class="btn">طلب الآن</button>
-                </div>
+                <div class="car-icon">🚘</div>
+                <h3 class="car-title">وصلني VIP</h3>
+                <p class="car-price">التعرفة: 1500 ج.س فتحة عداد</p>
+                <ul class="car-specs">
+                    <li>✔ سيارات حديثة وقوة أداء عالية</li>
+                    <li>✔ سائقين محترفين بدرجة عالية</li>
+                    <li>✔ خدمات ضيافة أثناء الرحلة</li>
+                </ul>
             </div>
+        </div>
+
+        <!-- زر الانتقال للصفحة التالية (الخريطة) -->
+        <div class="next-page-action">
+            <a href="map.html" class="btn" style="max-width: 350px;">الانتقال لتحديد الموقع والخريطة ➔</a>
         </div>
     </div>
 
