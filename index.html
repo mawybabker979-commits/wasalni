@@ -3,57 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وصلني - تسجيل الدخول</title>
-    <link rel="stylesheet" href="style.css">
+    <title>تطبيق وصلني - تسجيل الدخول</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">🚖 <span>وصلني</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">تسجيل الدخول</a></li>
-                <li><a href="about.html">السيارات المتاحة</a></li>
-                <li><a href="map.html">الخريطة</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-            </ul>
+        <h2><a href="index.html">تطبيق وصلني</a></h2>
+        <nav>
+            <a href="index.html" class="active">الرئيسية</a>
+            <a href="map.html">الخريطة</a>
+            <a href="about.html">عن الموقع</a>
+            <a href="contact.html">تواصل معنا</a>
         </nav>
     </header>
 
-    <div class="container">
-        <div style="max-width: 450px; margin: 1rem auto;" class="card">
-            
-            <div class="auth-tabs">
-                <button class="tab-btn active">تسجيل الدخول</button>
-                <button class="tab-btn">إنشاء حساب جديد</button>
-            </div>
-
-            <!-- نموذج الدخول / إنشاء الحساب -->
-            <form action="about.html" method="GET">
+    <main class="container">
+        <div class="card">
+            <h2>مرحباً بك في وصلني</h2>
+            <p>سجل دخولك الآن لطلب رحلتك بكل سهولة وأمان.</p>
+            <form onsubmit="event.preventDefault(); alert('تم تسجيل الدخول بنجاح!');">
                 <div class="form-group">
-                    <label for="username">الاسم الكامل / البريد الإلكتروني</label>
-                    <input type="text" id="username" placeholder="أدخل البريد أو اسم المستخدم" required>
+                    <label for="phone">رقم الهاتف:</label>
+                    <input type="text" id="phone" placeholder="أدخل رقم هاتفك" required>
                 </div>
-
                 <div class="form-group">
-                    <label for="phone">رقم الهاتف</label>
-                    <input type="tel" id="phone" placeholder="0912345678" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="password">كلمة المرور</label>
+                    <label for="password">كلمة المرور:</label>
                     <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
                 </div>
-
-                <!-- زر التسجيل والدخول يقود مباشرة للصفحة التالية about.html -->
-                <button type="submit" class="btn">تسجيل الدخول والانتفال للخدمات ➔</button>
+                <button type="submit" class="btn">دخول</button>
             </form>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 - تطبيق وصلني</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 تطبيق وصلني</p>
     </footer>
-
 </body>
 </html>
