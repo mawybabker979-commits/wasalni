@@ -7,36 +7,44 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
-        <h2><a href="index.html">تطبيق وصلني</a></h2>
+        <h2><a href="index.html" style="text-decoration: none; color: #38bdf8;">تطبيق وصلني</a></h2>
         <nav>
-            <a href="index.html" class="active">الرئيسية</a>
+            <a href="index.html">الرئيسية</a>
             <a href="map.html">الخريطة</a>
             <a href="about.html">عن الموقع</a>
             <a href="contact.html">تواصل معنا</a>
         </nav>
     </header>
 
+    <h2 id="welcome-msg" style="color: #38bdf8; font-size: 20px; text-align: center; margin: 15px 0;"></h2>
+
     <main class="container">
         <div class="card">
-            <h2>مرحباً بك في وصلني</h2>
-            <p>سجل دخولك الآن لطلب رحلتك بكل سهولة وأمان.</p>
-            <form onsubmit="event.preventDefault(); alert('تم تسجيل الدخول بنجاح!');">
-                <div class="form-group">
-                    <label for="phone">رقم الهاتف:</label>
-                    <input type="text" id="phone" placeholder="أدخل رقم هاتفك" required>
+            <h2>تسجيل الدخول إلى حسابك</h2>
+            <form action="map.html" method="get">
+                <div class="form-group" style="text-align: right; margin-bottom: 15px;">
+                    <label for="username">اسم المستخدم أو رقم الهاتف:</label><br>
+                    <input type="text" id="username" name="username" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #475569; background-color: #0f172a; color: #fff; margin-top: 5px;">
                 </div>
-                <div class="form-group">
-                    <label for="password">كلمة المرور:</label>
-                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                
+                <div class="form-group" style="text-align: right; margin-bottom: 15px;">
+                    <label for="password">كلمة المرور:</label><br>
+                    <input type="password" id="password" name="password" required style="width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #475569; background-color: #0f172a; color: #fff; margin-top: 5px;">
                 </div>
-                <button type="submit" class="btn">دخول</button>
+                
+                <div>
+                    <button type="submit" id="login-btn" class="btn" style="width: 100%; padding: 10px; background-color: #38bdf8; color: #0f172a; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">تسجيل الدخول</button>
+                </div>
             </form>
         </div>
     </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 تطبيق وصلني</p>
+        <p>&copy; 2026 تطبيق وصلني - جميع الحقوق محفوظة</p>
     </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
