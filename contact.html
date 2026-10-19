@@ -3,75 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وصلني - تواصل معنا</title>
-    <link rel="stylesheet" href="style.css">
+    <title>تطبيق وصلني - تواصل معنا</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">🚖 <span>وصلني</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">تسجيل الدخول</a></li>
-                <li><a href="about.html">السيارات المتاحة</a></li>
-                <li><a href="map.html">الخريطة</a></li>
-                <li><a href="contact.html" class="active">تواصل معنا</a></li>
-            </ul>
+        <h2><a href="index.html">تطبيق وصلني</a></h2>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="map.html">الخريطة</a>
+            <a href="about.html">عن الموقع</a>
+            <a href="contact.html" class="active">تواصل معنا</a>
         </nav>
     </header>
 
-    <div class="container">
-        <h2 class="page-title">تواصل معنا والاستفسارات</h2>
-
-        <div class="contact-container">
-            <!-- نموذج إرسال الرسائل -->
-            <div class="card">
-                <h3 style="margin-bottom: 1rem; color: var(--text-light);">أرسل رسالة أو استفسار</h3>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="c-name">الاسم</label>
-                        <input type="text" id="c-name" placeholder="أدخل اسمك الكريم" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="c-phone">رقم التواصل</label>
-                        <input type="tel" id="c-phone" placeholder="أدخل رقم الهاتف" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="c-msg">نص الرسالة / الاستفسار</label>
-                        <textarea id="c-msg" rows="4" placeholder="اكتب استفسارك هنا..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">إرسال الرسالة ✉</button>
-                </form>
-            </div>
-
-            <!-- معلومات التواصل المباشر -->
-            <div>
-                <div class="info-card">
-                    <h4>📞 الدعم الفني</h4>
-                    <p style="color: var(--text-muted); margin-top: 5px;">خدمة متواصلة على مدار الساعة</p>
-                    <p style="font-weight: bold; margin-top: 5px;">+249 900 000 000</p>
+    <main class="container">
+        <div class="card">
+            <h2>تواصل معنا</h2>
+            <p>نحن هنا للرد على استفساراتكم ومقترحاتكم طوال اليوم.</p>
+            <form onsubmit="event.preventDefault(); alert('تم إرسال رسالتك بنجاح، شكراً لتواصلك معنا!');">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" placeholder="أدخل اسمك" required>
                 </div>
-
-                <div class="info-card">
-                    <h4>✉ البريد الإلكتروني</h4>
-                    <p style="color: var(--text-muted); margin-top: 5px;">للاستفسارات والشكاوى</p>
-                    <p style="font-weight: bold; margin-top: 5px;">info@wasalni.com</p>
+                <div class="form-group">
+                    <label for="msg">الرسالة:</label>
+                    <textarea id="msg" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
                 </div>
-
-                <div class="info-card">
-                    <h4>📍 المقر الرئيسي</h4>
-                    <p style="color: var(--text-muted); margin-top: 5px;">مركز خدمة العملاء وتطوير الخدمات</p>
-                </div>
-            </div>
+                <button type="submit" class="btn">إرسال الرسالة</button>
+            </form>
         </div>
-    </div>
+    </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 - تطبيق وصلني</p>
+        <p>جميع الحقوق محفوظة &copy; 2026 تطبيق وصلني</p>
     </footer>
-
 </body>
 </html>
