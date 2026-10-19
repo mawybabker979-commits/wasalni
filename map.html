@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تطبيق وصلني - الخريطة</title>
+    <title>تطبيق وصلني - خريطة الرحلات</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
-        <h2><a href="index.html">تطبيق وصلني</a></h2>
+        <h2><a href="index.html" style="text-decoration: none; color: #38bdf8;">تطبيق وصلني</a></h2>
         <nav>
             <a href="index.html">الرئيسية</a>
             <a href="map.html" class="active">الخريطة</a>
@@ -18,18 +19,58 @@
     </header>
 
     <main class="container">
-        <div class="card">
-            <h2>خريطة الرحلات المباشرة</h2>
-            <p>حدد وجهتك الحالية والوصول لتحديد السائق القريب منك.</p>
-            <div class="map-box">
-                <p>🗺️ [جارٍ تحميل الخريطة وتحديد موقعك الحالي...]</p>
+        <div class="card" style="max-width: 700px; text-align: right;">
+            <h2 style="text-align: center;">الرحلات والسائقون المتاحة</h2>
+            <p style="text-align: center;">قائمة بأقرب الكابتن والخدمات المتاحة في منطقتك:</p>
+
+            <div style="overflow-x: auto; margin-top: 20px;">
+                <table style="width: 100%; border-collapse: collapse; text-align: right; background-color: #0f172a; border-radius: 8px; overflow: hidden;">
+                    <thead>
+                        <tr style="background-color: #1e293b; color: #38bdf8; border-bottom: 1px solid #334155;">
+                            <th style="padding: 12px;">منطقة الانطلاق</th>
+                            <th style="padding: 12px;">نوع المركبة</th>
+                            <th style="padding: 12px;">اسم الكابتن</th>
+                            <th style="padding: 12px;">التقدير</th>
+                            <th style="padding: 12px;">ملاحظات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid #334155;">
+                            <td style="padding: 12px;">وسط المدينة</td>
+                            <td style="padding: 12px;">سيارة اقتصادية</td>
+                            <td style="padding: 12px;">محمد أحمد</td>
+                            <td style="padding: 12px;">قريب جداً</td>
+                            <td style="padding: 12px;">مكيف، جاهز للتحرك</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #334155;">
+                            <td style="padding: 12px;">المنطقة التجارية</td>
+                            <td style="padding: 12px;">سيارة عائلية</td>
+                            <td style="padding: 12px;">عمر خالد</td>
+                            <td style="padding: 12px;">5 دقائق</td>
+                            <td style="padding: 12px;">مساحة واسعة للحقائب</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px;">حي السكك الحديدية</td>
+                            <td style="padding: 12px;">دراجة / توصيل سريع</td>
+                            <td style="padding: 12px;">مهند علي</td>
+                            <td style="padding: 12px;">دقيقتان</td>
+                            <td style="padding: 12px;">سريع وخفيف للطلبات</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-            <button class="btn" onclick="alert('جاري البحث عن كابتن قريب منك...')">اطلب رحلة الآن</button>
+
+            <div style="margin-top: 25px; text-align: center;">
+                <button class="btn" onclick="alert('جاري طلب أقرب كابتن لك الآن...');" style="padding: 10px 20px; background-color: #38bdf8; color: #0f172a; border: none; border-radius: 6px; font-weight: bold; cursor: pointer;">اطلب رحلة الآن</button>
+            </div>
         </div>
     </main>
 
     <footer>
-        <p>جميع الحقوق محفوظة &copy; 2026 تطبيق وصلني</p>
+        <p>&copy; 2026 تطبيق وصلني - جميع الحقوق محفوظة</p>
     </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
